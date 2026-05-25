@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: https://ogp.me/ns#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logtask｜会議の議事録からタスク化まで一気通貫</title>
+  <meta name="description" content="Logtaskは、会議の録音・文字起こし・要約・タスク化・共有までを一気通貫で支援するAIタスク管理サービスです。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Logtask｜会議の議事録からタスク化まで一気通貫">
+  <meta property="og:description" content="会議が終わる頃には、次にやることが揃っている。録音から議事録作成、タスク化、共有までをAIが支援します。">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/imgs/favicon-48x48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/destyle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+ <header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="logo" aria-label="Logtask ホーム">
+      <img src="assets/imgs/logo.svg" alt="Logtask" class="logo__img">
+    </a>
+
+    <button
+      class="header__menu"
+      type="button"
+      aria-label="メニューを開く"
+      aria-controls="global-nav"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="global-nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list">
+        <li><a href="#top-how">使い方</a></li>
+        <li><a href="#top-features">機能</a></li>
+        <li><a href="#top-case-study">導入事例</a></li>
+        <li><a href="#top-voices">お客様の声</a></li>
+        <li><a href="#top-contact">問い合わせ</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="#top-contact" class="nav__login">無料相談</a>
+        <a href="#top-contact" class="btn btn--small">無料で始める</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="fv">
+    <div class="fv__inner">
+      
+      <!-- Text -->
+      <div class="fv__content">
+        <h1 class="fv__title">
+          会議が終わる頃には、<br>
+          タスクが揃っている。
+        </h1>
+  
+        <p class="fv__lead">
+          話すだけで、議事録からタスク化まで。<br>
+          チームの「次にやること」が<br class="sp-only">すぐに明確になります。
+        </p>
+  
+        <a href="#top-contact" class="btn btn--primary fv__cta">
+          今すぐ無料で始める
+        </a>
+  
+        <p class="fv__users">
+          ユーザー数 <strong>80,098</strong>人
+        </p>
+      </div>
+  
+      <!-- Visual -->
+      <div class="fv__visual" aria-hidden="true">
+        <div class="fv__flow">
+  
+          <!-- Voice input -->
+          <div class="chat-stack">
+            <img class="chat-img chat-img--1" src="assets/imgs/fv1.png" alt="">
+            <img class="chat-img chat-img--2" src="assets/imgs/fv2.png" alt="">
+            <img class="chat-img chat-img--3" src="assets/imgs/fv3.png" alt="">
+            <img class="chat-img chat-img--4" src="assets/imgs/fv4.png" alt="">
+          </div>
+  
+<!-- Flow lines (background visual) -->
+<div class="flow-lines" aria-hidden="true">
+  <img
+    class="flow-lines__img"
+    src="assets/imgs/flow-lines-img.svg"
+    alt=""
+    loading="lazy"
+    decoding="async"
+  >
+</div>
+
+<div class="ai-particles" aria-hidden="true">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+          <!-- Voice wave -->
+          <img class="voice-icon voice-icon--1" src="assets/imgs/voice.svg" alt="">
+          <img class="voice-icon voice-icon--2" src="assets/imgs/voice.svg" alt="">
+  
+          <!-- AI processing -->
+          <div class="ai-node">
+            <span class="ai-node__glow"></span>
+            <span class="ai-node__ring ai-node__ring--1"></span>
+            <span class="ai-node__ring ai-node__ring--2"></span>
+            <span class="ai-node__core">
+              <span class="ai-node__label">AI</span>
+            </span>
+  
+            <p class="ai-node__text">
+              AIが自動で<br>
+              整理・タスク化
+            </p>
+          </div>
+  
+          <!-- Task output -->
+          <div class="task-card-img">
+            <img src="assets/imgs/task.png" alt="">
+  
+            <span class="task-check task-check--1"></span>
+            <span class="task-check task-check--2"></span>
+            <span class="task-check task-check--3"></span>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="how__inner">
+      <h2 class="how__title" id="top-how">使い方はとてもシンプル</h2>
+  
+      <div class="how__steps">
+        <article class="how-card">
+          <div class="how-card__head">
+            <span class="how-card__num">1</span>
+            <h3 class="how-card__title">会議を録音・文字起こし</h3>
+          </div>
+  
+          <div class="how-card__visual how-card__visual--photo">
+            <img src="assets/imgs/how-step01.jpg" alt="オンライン会議を録音している画面">
+            <span class="how-card__mic">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 15.5a3.5 3.5 0 0 0 3.5-3.5V7a3.5 3.5 0 1 0-7 0v5a3.5 3.5 0 0 0 3.5 3.5Zm6-3.5a1 1 0 1 0-2 0 4 4 0 1 1-8 0 1 1 0 1 0-2 0 6 6 0 0 0 5 5.91V20H9.5a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H13v-2.09A6 6 0 0 0 18 12Z" fill="currentColor"/>
+              </svg>
+            </span>
+          </div>
+  
+          <p class="how-card__text">
+            オンライン・オフライン問わず、会議を録音し自動で文字起こしします。
+          </p>
+        </article>
+  
+        <div class="how__arrow" aria-hidden="true"></div>
+  
+        <article class="how-card">
+          <div class="how-card__head">
+            <span class="how-card__num">2</span>
+            <h3 class="how-card__title">AIが内容を解析・要約</h3>
+          </div>
+  
+          <div class="how-card__visual how-card__visual--log">
+            <ul class="meeting-log">
+              <li>
+                <span class="meeting-log__time">10:12</span>
+                <span class="meeting-log__name">但馬</span>
+                <p>デザイン修正は来週までにお願いします。</p>
+              </li>
+              <li>
+                <span class="meeting-log__time">10:15</span>
+                <span class="meeting-log__name">山下</span>
+                <p>こちらの素材は一旦保留ですね。</p>
+              </li>
+              <li>
+                <span class="meeting-log__time">10:17</span>
+                <span class="meeting-log__name">岡山</span>
+                <p>Aを先に進めましょう。○○に提出お願いします。</p>
+              </li>
+              <li>
+                <span class="meeting-log__time">10:21</span>
+                <span class="meeting-log__name">吉村</span>
+                <p>今週以内に先方からの連絡次第で進めます。</p>
+              </li>
+            </ul>
+  
+            <div class="waveform" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+  
+          <p class="how-card__text">
+            AIが会話の要点や決定事項を自動で解析・要約します。
+          </p>
+        </article>
+  
+        <div class="how__arrow" aria-hidden="true"></div>
+  
+        <article class="how-card">
+          <div class="how-card__head">
+            <span class="how-card__num">3</span>
+            <h3 class="how-card__title">タスクを自動で抽出</h3>
+          </div>
+  
+          <div class="how-card__visual how-card__visual--tasks">
+            <ul class="task-draft">
+              <li><span></span><div></div></li>
+              <li><span></span><div></div></li>
+              <li><span></span><div></div></li>
+              <li><span></span><div></div></li>
+            </ul>
+          </div>
+  
+          <p class="how-card__text">
+            やるべきことを自動で抽出し、担当者や期限の候補も提案します。
+          </p>
+        </article>
+  
+        <div class="how__arrow" aria-hidden="true"></div>
+  
+        <article class="how-card">
+          <div class="how-card__head">
+            <span class="how-card__num">4</span>
+            <h3 class="how-card__title">タスクを共有・実行</h3>
+          </div>
+  
+          <div class="how-card__visual how-card__visual--share">
+            <ul class="task-share">
+              <li class="is-active">
+                <span class="task-share__check"></span>
+                <div class="task-share__main">
+                  <p class="task-share__name">デザイン修正の対応</p>
+                  <p class="task-share__meta">担当：佐藤のぞみ</p>
+                </div>
+                <p class="task-share__date">5月10日(水)</p>
+              </li>
+  
+              <li>
+                <span class="task-share__check"></span>
+                <div class="task-share__main">
+                  <p class="task-share__name">クライアントに交渉/進捗報告</p>
+                  <p class="task-share__meta">木下・鈴木</p>
+                </div>
+                <p class="task-share__date">5月11日(木)</p>
+              </li>
+  
+              <li>
+                <span class="task-share__check"></span>
+                <div class="task-share__main">
+                  <p class="task-share__name">公開スケジュールの確認/公開</p>
+                  <p class="task-share__meta">但馬</p>
+                </div>
+                <p class="task-share__date">5月15日(月)</p>
+              </li>
+  
+              <li>
+                <span class="task-share__check"></span>
+                <div class="task-share__main">
+                  <p class="task-share__name">A社ディレクション/見積もり</p>
+                  <p class="task-share__meta">吉村</p>
+                </div>
+                <p class="task-share__date">5月15日(月)</p>
+              </li>
+            </ul>
+          </div>
+  
+          <p class="how-card__text">
+            タスクをチームで共有して、そのまま実行に移せます。
+          </p>
+        </article>
+      </div>
+  
+      <p class="how__link-wrap">
+        <a href="how-it-works.html" class="how__link">使い方を詳しく見る</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="reason" id="reasons">
+    <div class="reason__inner">
+      <h2 class="reason__title" id="top-features">選ばれる3つの理由</h2>
+  
+      <div class="reason__grid">
+        <article class="reason-card reason-card--line">
+          <div class="reason-card__head">
+            <span class="reason-card__icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 7h12M6 12h7M6 17h11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="m17 10 2 2 3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="reason-card__title">会議からタスクまで一気通貫</h3>
+          </div>
+  
+          <p class="reason-card__text">
+            記録・文字起こし・要約・タスク化・共有までをすべて自動化。ツールを行き来する必要がなく、業務がシームレスに。
+          </p>
+  
+          <div class="reason-card__ui reason-card__ui--icons" aria-hidden="true">
+            <span class="reason-ui__round">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 15.5a3.5 3.5 0 0 0 3.5-3.5V7a3.5 3.5 0 1 0-7 0v5a3.5 3.5 0 0 0 3.5 3.5Zm6-3.5a1 1 0 1 0-2 0 4 4 0 1 1-8 0 1 1 0 1 0-2 0 6 6 0 0 0 5 5.91V20H9.5a1 1 0 1 0 0 2h5a1 1 0 1 0 0-2H13v-2.09A6 6 0 0 0 18 12Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <!-- 02 -->
+            <span class="reason-ui__round">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m4 16 6-6 4 4 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 7h5v5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <!-- 03 -->
+            <span class="reason-ui__round">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="4" width="14" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 9h8M8 13h8M8 17h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+           <!-- 04 -->
+            <span class="reason-ui__round">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 7h12M6 12h7M6 17h11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="m17 10 2 2 3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <!-- 05 -->
+            <span class="reason-ui__round">
+              <svg viewBox="0 0 24 24">
+                <circle cx="8" cy="9" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="16" cy="9" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="7" r="2.2" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M5.5 18c.4-2 1.9-3.5 4-3.5 1 0 2 .3 2.5.8M18.5 18c-.4-2-1.9-3.5-4-3.5-1 0-2 .3-2.5.8M8 18c.5-2.5 2.5-4 4-4s3.5 1.5 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+        </article>
+  
+        <article class="reason-card reason-card--line">
+          <div class="reason-card__head">
+            <span class="reason-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m4 16 6-6 4 4 6-7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15 7h5v5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3 class="reason-card__title">圧倒的な効率化を実現</h3>
+          </div>
+  
+          <p class="reason-card__text">
+            AIが会話を高精度に解析し、要点や課題、次のアクションを自動で整理。手作業をなくし、チームの生産性を最大化します。
+          </p>
+  
+          <div class="reason-card__ui reason-card__ui--metrics" aria-hidden="true">
+            <div class="reason-metric">
+              <span class="reason-metric__label">手作業</span>
+              <span class="reason-metric__value">削減</span>
+            </div>
+            <div class="reason-metric">
+              <span class="reason-metric__label">生産性</span>
+              <span class="reason-metric__value">向上</span>
+            </div>
+            <div class="reason-metric">
+              <span class="reason-metric__label">意思決定</span>
+              <span class="reason-metric__value">スピードUP</span>
+            </div>
+          </div>
+        </article>
+  
+        <article class="reason-card">
+          <div class="reason-card__head">
+            <span class="reason-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="10" r="5.5" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="10.2" cy="9" r="1.4" fill="currentColor"/>
+                <circle cx="15.8" cy="9" r="1.4" fill="currentColor"/>
+                <path d="M9.2 13.3c.8-.8 1.8-1.2 2.8-1.2s2 .4 2.8 1.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3 class="reason-card__title">誰でも使いやすいシンプル設計</h3>
+          </div>
+  
+          <p class="reason-card__text">
+            直感的なUIで、ITに詳しくないメンバーでもすぐに使いこなせます。導入後すぐに効果を実感できます。
+          </p>
+  
+          <div class="reason-card__ui reason-card__ui--todo" aria-hidden="true">
+            <div class="reason-todo">
+              <p class="reason-todo__title">To Do</p>
+  
+              <div class="reason-todo__row">
+                <span class="reason-todo__check"></span>
+                <span class="reason-todo__line"></span>
+                <span class="reason-todo__status reason-todo__status--green"></span>
+              </div>
+  
+              <div class="reason-todo__row">
+                <span class="reason-todo__check"></span>
+                <span class="reason-todo__line"></span>
+                <span class="reason-todo__status"></span>
+              </div>
+            </div>
+  
+          </div>
+        </article>
+      </div>
+  
+      <p class="reason__link-wrap">
+        <a href="features.html" class="reason__link">機能を詳しく見る</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="benefit" id="case-study-preview">
+    <div class="benefit__inner">
+      <h2 class="benefit__title" id="top-case-study">会議後の業務が、<br class="sp-only">ここまで変わる</h2>
+  
+      <div class="benefit__cards">
+        <article class="benefit-card">
+          <div class="benefit-card__icon-wrap">
+            <span class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 6.5v5l3.2 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </span>
+          </div>
+  
+          <h3 class="benefit-card__title">時間を大幅に削減</h3>
+  
+          <p class="benefit-card__text">
+            議事録作成やタスク調整の時間を最大90%削減。コア作業に集中できます。
+          </p>
+  
+          <div class="benefit-ui benefit-ui--chart">
+            <div class="benefit-ui__left">
+              <p class="benefit-ui__label">議事録・タスク作成にかかる時間</p>
+              <p class="benefit-ui__result">約<span class="big90">90</span>%削減</p>
+            </div>
+          
+            <div class="benefit-ui__graph">
+              <div class="benefit-ui__bar benefit-ui__bar--before"></div>
+              <div class="benefit-ui__bar benefit-ui__bar--after"></div>
+              <div class="benefit-ui__bar-labels">
+                <span>導入前</span>
+                <span>導入後</span>
+              </div>
+            </div>
+          </div>
+        </article>
+  
+        <article class="benefit-card">
+          <div class="benefit-card__icon-wrap">
+            <span class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3.5 5 6.5v5.2c0 4 2.7 7.6 7 8.8 4.3-1.2 7-4.8 7-8.8V6.5l-7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <path d="m9.2 11.8 2 2 3.8-4.1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </div>
+  
+          <h3 class="benefit-card__title">タスクの抜け漏れを防止</h3>
+  
+          <p class="benefit-card__text">
+            会話からタスクを漏れなく抽出。「言った・言ってない」のストレスをなくします。
+          </p>
+  
+          <div class="benefit-card__ui benefit-card__ui--zero" aria-hidden="true">
+            <div class="benefit-ui__zero-left">
+              <p class="benefit-ui__label">タスクの抜け漏れ</p>
+              <p class="benefit-ui__zero">ゼロ<span>へ</span></p>
+            </div>
+  
+            <ul class="benefit-ui__checklist">
+              <li><span></span><div></div></li>
+              <li><span></span><div></div></li>
+              <li><span></span><div></div></li>
+            </ul>
+          </div>
+        </article>
+  
+        <article class="benefit-card">
+          <div class="benefit-card__icon-wrap">
+            <span class="benefit-card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="8" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="16" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="7" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M4.8 18c.4-2.4 2.3-4 4.7-4 1 0 1.9.2 2.7.7M19.2 18c-.4-2.4-2.3-4-4.7-4-1 0-1.9.2-2.7.7M7.8 18c.5-2.8 2.8-4.7 5.2-4.7s4.7 1.9 5.2 4.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </div>
+  
+          <h3 class="benefit-card__title">チームの連携を加速</h3>
+  
+          <p class="benefit-card__text">
+            タスクと担当者・期限を自動で共有。認識のズレなく、すぐに次の行動へ。
+          </p>
+  
+          <div class="benefit-card__ui benefit-card__ui--speed" aria-hidden="true">
+            <p class="benefit-ui__label">次のアクションまでの時間</p>
+  
+            <div class="benefit-ui__speed-row">
+              <p class="benefit-ui__speed">スピード<span>UP</span></p>
+  
+              <div class="benefit-ui__members">
+                <span class="benefit-ui__person"></span>
+                <span class="benefit-ui__person"></span>
+                <span class="benefit-ui__person"></span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+  
+      <p class="benefit__link-wrap">
+        <a href="case-study.html" class="benefit__link">導入事例を見る</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="guide" id="guide">
+    <div class="guide__inner">
+      <div class="guide__movie">
+        <a href="how-it-works.html" class="guide__movie-link" aria-label="ご利用ガイド動画を再生">
+          <img src="assets/imgs/guide-movie-mockup.jpg" alt="ご利用ガイド動画のモックアップ">
+        </a>
+      </div>
+  
+      <div class="guide__content">
+        <h2 class="guide__title">動画でさくっとご利用ガイド</h2>
+        <p class="guide__text">ほかにもサポート動画をご用意しております。</p>
+        <p class="guide__link-wrap">
+          <a href="how-it-works.html" class="guide__link">ご視聴はこちら</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="voices" id="voices">
+    <div class="voices__inner">
+      <h2 class="voices__title" id="top-voices">お客様の声</h2>
+  
+      <div class="voices__list">
+        <article class="voice-card">
+          <div class="voice-card__quote">
+            <img src="assets/imgs/quote.png" alt="">
+          </div>
+          <div class="voice-card__body">
+            <p class="voice-card__text">
+              会議後のタスク整理にかかっていた時間が大幅に減りました。
+            </p>
+            <p class="voice-card__text">
+              これまでは議事録を見返しながら手動でタスクを作っていましたが、
+              今はその場で「誰が・何を・いつまでに」が整理されます。
+            </p>
+          </div>
+  
+          <div class="voice-card__profile">
+            <img
+              class="voice-card__image"
+              src="assets/imgs/voice01.jpg"
+              alt="制作会社ディレクター 山田麻由美"
+              width="70"
+              height="70"
+            >
+            <div class="voice-card__info">
+              <p class="voice-card__name">山田 麻由美</p>
+              <p class="voice-card__role">制作会社 / ディレクター</p>
+            </div>
+          </div>
+        </article>
+  
+        <article class="voice-card">
+          <div class="voice-card__quote">
+            <img src="assets/imgs/quote.png" alt="">
+          </div>
+          <div class="voice-card__body">
+            <p class="voice-card__text">
+              以前はツールのやり取りを遡って確認することが多く、
+              どこまで対応したのか分からなくなることがありました。
+            </p>
+            <p class="voice-card__text">
+              Logtaskならタスクとして整理されるので、
+              迷うことなく作業に集中できるようになりました。
+            </p>
+          </div>
+  
+          <div class="voice-card__profile">
+            <img
+              class="voice-card__image"
+              src="assets/imgs/voice02.jpg"
+              alt="インハウスデザイナー 柴山絵美"
+              width="70"
+              height="70"
+            >
+            <div class="voice-card__info">
+              <p class="voice-card__name">柴山 絵美</p>
+              <p class="voice-card__role">インハウスデザイナー</p>
+            </div>
+          </div>
+        </article>
+  
+        <article class="voice-card">
+          <div class="voice-card__quote">
+            <img src="assets/imgs/quote.png" alt="">
+          </div>
+
+          <div class="voice-card__body">
+            <p class="voice-card__text">
+              タスクの抜け漏れや認識のズレが減り、
+              チーム全体の動きがスムーズになったと感じています。
+            </p>
+            <p class="voice-card__text">
+              会議で決まったことがそのまま実行に移るため、
+              確認のやり取りが減り、業務効率も大きく改善しました。
+            </p>
+          </div>
+  
+          <div class="voice-card__profile">
+            <img
+              class="voice-card__image"
+              src="assets/imgs/voice03.jpg"
+              alt="IT企業プロジェクトマネージャー 鈴木健太"
+              width="70"
+              height="70"
+            >
+            <div class="voice-card__info">
+              <p class="voice-card__name">鈴木 健太</p>
+              <p class="voice-card__role">IT企業 / プロジェクトマネージャー</p>
+            </div>
+          </div>
+        </article>
+      </div>
+  
+      <div class="voices__dots" aria-label="スライド位置">
+        <span class="voices__dot is-active"></span>
+        <span class="voices__dot"></span>
+        <span class="voices__dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="security" id="security">
+    <div class="security__inner">
+      <h2 class="security__title">安心してご利用いただけるセキュリティーとサポート体制</h2>
+  
+      <div class="security__list">
+        <article class="security__item">
+          <div class="security__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="6" y="10" width="12" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M9 10V7.5a3 3 0 1 1 6 0V10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="12" cy="15" r="1.2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="security__content">
+            <h3 class="security__heading">高度なセキュリティー</h3>
+            <p class="security__text">
+              通信・記録ともに暗号化。第三者機関のセキュリティー基準を満たしています。
+            </p>
+          </div>
+        </article>
+  
+        <article class="security__item">
+          <div class="security__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3.5 5 6.5v5.2c0 4 2.7 7.6 7 8.8 4.3-1.2 7-4.8 7-8.8V6.5l-7-3Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <rect x="10.2" y="10.2" width="3.6" height="4.2" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M11 10V9a1 1 0 1 1 2 0v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="security__content">
+            <h3 class="security__heading">細かな制限管理</h3>
+            <p class="security__text">
+              メンバーやチームごとにアクセス制限を設定し、情報を安全に管理できます。
+            </p>
+          </div>
+        </article>
+  
+        <article class="security__item">
+          <div class="security__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <ellipse cx="12" cy="6.5" rx="6" ry="2.8" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 6.5v5c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8v-5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 11.5v5c0 1.5 2.7 2.8 6 2.8s6-1.3 6-2.8v-5" fill="none" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="security__content">
+            <h3 class="security__heading">データの安全な管理</h3>
+            <p class="security__text">
+              国内の安全なデータセンターで運用し、定期的なバックアップを実施。
+            </p>
+          </div>
+        </article>
+  
+        <article class="security__item">
+          <div class="security__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4.5a7 7 0 0 0-7 7v3.2a1.8 1.8 0 0 0 1.8 1.8h1.4V11a3.8 3.8 0 1 1 7.6 0v5.5h1.4a1.8 1.8 0 0 0 1.8-1.8V11.5a7 7 0 0 0-7-7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M10 18.5h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="12" cy="12" r="1.2" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="security__content">
+            <h3 class="security__heading">充実のサポート</h3>
+            <p class="security__text">
+              導入支援から運用サポートまで、専任チームが丁寧にサポートします。
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+    <section class="cta">
+
+      <div class="cta__decor" aria-hidden="true">
+    
+        <article class="cta-card cta-card--top-left">
+          <div class="mini-card mini-card--record"></div>
+        </article>
+    
+        <article class="cta-card cta-card--top-right">
+          <div class="mini-card mini-card--share"></div>
+        </article>
+    
+        <article class="cta-card cta-card--bottom-left">
+          <div class="mini-card mini-card--ai"></div>
+        </article>
+    
+        <article class="cta-card cta-card--bottom-right">
+          <div class="mini-card mini-card--task"></div>
+        </article>
+    
+      </div>
+  
+    <div class="cta__inner">
+      <h2 class="cta__title" id="top-contact">
+        まずは無料で、<br>
+        会議からタスク化を体験して<br class="sp-only">ください。
+      </h2>
+  
+      <p class="cta__text">
+        無料で始められます。<br>
+        クレジットカード不要。
+      </p>
+  
+      <a href="contact.html" class="cta__button">
+        今すぐ無料ではじめる
+      </a>
+    </div>
+  
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+
+    <!-- ロゴ -->
+    <div class="footer__brand">
+      <img src="assets/imgs/logo.svg" alt="Logtask" class="footer__logo-img">
+    </div>
+
+    <!-- ナビ -->
+    <nav class="footer__nav">
+      <a href="how-it-works.html">使い方</a>
+      <a href="features.html">機能</a>
+      <a href="price.html">料金</a>
+      <a href="case-study.html">導入事例</a>
+      <a href="index.html">会社概要</a>
+      <a href="contact.html">プライバシーポリシー</a>
+      <a href="contact.html">利用規約</a>
+    </nav>
+
+    <!-- コピー -->
+    <p class="footer__copy">
+      ©2026 logtask Inc.
+    </p>
+
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/top.js"></script>
+</body>
+
+</html>
